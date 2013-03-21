@@ -1,0 +1,23 @@
+.percentgraph {
+    padding: 0px;
+    margin: 0px;
+    border: #808080 1px solid;
+    width: 100px;
+    background-color: #ff9090;
+    height: 1.4em;
+}
+
+.greenbar {
+    padding: 0px;
+    margin: 0px;
+    background-color: #80ff80;
+    height: 1.4em;
+}
+
+.text {
+    display: block;
+    text-align: center;
+    padding: 1px 1px 0 0;
+    width: 100px;
+    height: 1.4em;
+}

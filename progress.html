@@ -1,0 +1,53 @@
+<html>
+<head>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.progress.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/jquery.progress.css" />
+</head>
+<body>
+
+<dl>
+    <dt>Current progress</dt>
+    <dd>
+        <div id="progress1"></div>
+    </dd>
+
+
+    <dt>HTML Result without JavaScript</dt>
+    <dd>
+        <div id="progress2" class="percentgraph">
+            <div style="width: 43.75px" class="greenbar">
+                <span class="text">43.75%</span>
+            </div>
+        </div>
+    </dd>
+</dl>
+       
+<script type="text/javascript">
+
+$(function() {
+
+    // Some cahnge ...
+    setInterval(function() {
+        var progress = Math.random() * 100;
+        $('#progress1').progress({
+            value: progress.toFixed(2),
+            legend: true,
+        });
+    }, 1000);
+
+    setInterval(function() {
+        var progress = Math.random() * 100;
+        $('#progress2').progress({
+            value: progress.toFixed(2),
+            legend: false,
+        });
+    }, 1000);
+
+});
+</script>
+
+</body>
+</html>
